@@ -7,11 +7,12 @@ body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 28px;
+    padding: 10px;
 }
 
 img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
 }
 
 h1 {
@@ -23,43 +24,38 @@ p {
 }
 
 .currency {
-    padding: 48px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .currency select {
-    padding: 10px 20px 10px 10px;
-    border: 1px solid #080808;
-    font-size: 16px;
-    background-color: beige;
-    background-position: right 10px top 50%, 0, 0;
-    background-size: 12px auto, 100%;
-    background-repeat: no-repeat;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .currency input {
+    width: 100%;
     background-color: bisque;
-    font-size: 30px;
-    text-align: right;
+    margin-bottom: 10px;
 }
 
 .swapcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .rate {
     color: rgb(204, 221, 219);
     font-size: 14px;
-    padding: 0 65px;
+    padding: 0 10px;
     margin-bottom: 20px;
 }
 
 @media(max-width:600px) {
     .currency input {
-        width: 200px;
+        width: 100%;
     }
 }
